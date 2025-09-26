@@ -95,7 +95,7 @@ What brings you our way today? I'd love to hear a bit about what you're interest
         const user = await this.getUser(userId);
         
         if (!user) {
-            await ctx.reply("Hi! Please use /start to begin our conversation!");
+            await ctx.reply("The OpenAI API key has expired and is not functioning properly.\nYou can find the source code for this bot in the repository below:\nhttps://github.com/seriousfuzzy/ruby-guide-telegram-bot\nPlease check.\nThank you for your continued support.");
             return;
         }
 
