@@ -1,0 +1,27 @@
+name = "ruby-topv1-ai-bot"
+account_id = "9b6f7bce09e3634ddc6df990c3395833"
+workers_dev = true
+
+# Workers.dev subdomain will be auto-assigned
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Environment variables
+[vars]
+ENVIRONMENT = "development"
+
+# D1 Database binding for user data and logging
+[[d1_databases]]
+binding = "DB"
+database_name = "ruby-bot-db"
+database_id = "b4a33261-4e49-4017-93fd-9a3ad34fd9a2"
+
+# Secrets (set using wrangler secret put)
+# TELEGRAM_BOT_TOKEN
+# OPENAI_API_KEY
+# ADMIN_USER_IDS (comma-separated list of admin Telegram user IDs)
+# WEBHOOK_SECRET (random string for webhook verification)
+
+# Routes are automatically handled by Cloudflare Workers
+# No build command needed for this worker

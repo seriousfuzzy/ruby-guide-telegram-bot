@@ -1,0 +1,28 @@
+{
+  "name": "ruby-telegram-bot",
+  "version": "1.0.0",
+  "description": "Ruby - AI-powered brand ambassador Telegram bot for TopV1 LLC",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "jest"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "ai",
+    "cloudflare",
+    "workers"
+  ],
+  "author": "TopV1 LLC",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.28.0",
+    "telegraf": "^4.15.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "wrangler": "^4.40.2"
+  }
+}
